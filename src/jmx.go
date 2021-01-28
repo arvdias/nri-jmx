@@ -135,7 +135,7 @@ func main() {
 }
 
 // checkMetricLimit looks through all of the metric sets for every entity and aggregates the number
-// of metrics. If that total is greate than args.MetricLimit a warning is logged
+// of metrics. If that total is greate than args.MetricLimit a warning is logged and the entity is excluded
 func checkMetricLimit(entities []*integration.Entity) []*integration.Entity {
 	validEntities := make([]*integration.Entity, 0, len(entities))
 
